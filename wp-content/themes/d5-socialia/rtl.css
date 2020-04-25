@@ -1,0 +1,294 @@
+/*
+Theme Name: D5 Socialia
+Theme URI: https://d5creation.com/theme/socialia/
+
+Author: D5 Creation
+Author URI: https://d5creation.com/
+
+Description: D5 Socialia Theme for WordPress is sophisticated, lightweight, and adaptable. This theme is better for the Social Organizations, basically for the organizations working for Climate Change, Disaster Management, Natural Resources Management, Environment, Environmental Management, Social Works, Social Development, Cultural Organizations etc. It can also be used for Personal or Company Websites. You Can find a Live Demo of D5 Socialia Theme in this link <a href="http://demo.d5creation.com/themes/?theme=Socialia" target="_blank">http://demo.d5creation.com/wp/themes/d5socialia.</a>. Before Installing or Updating you must read the Readme File of this Theme.
+
+Version: 3.5
+
+Tags: one-column, two-columns, right-sidebar, custom-background, blog, portfolio, education, custom-colors, custom-header, custom-menu, featured-images, full-width-template, rtl-language-support, sticky-post, translation-ready, theme-options 
+
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+
+D5 Socialia WordPress Theme, Copyright 2012-2015: D5 Creation (www.d5creation.com)
+
+Text Domain: d5-socialia
+
+*/
+/* =Reset default browser CSS. Based on work by Eric Meyer: http://meyerweb.com/eric/tools/css/reset/index.html
+-------------------------------------------------------------- */
+
+caption, th, td {
+	text-align: right;
+}
+
+/* =WordPress Core and Addition
+-------------------------------------------------------------- */
+.alignnone,
+#content .alignnone,
+#content-full .alignnone,
+div .alignnone {
+	margin: 5px 0 20px 20px;
+}
+
+.alignleft,
+#content .alignleft,
+#content-full .alignleft,
+div .alignleft {
+	float:left;
+	margin: 5px 20px 20px 0;
+}
+
+.alignright,
+#content .alignright,
+#content-full .alignright,
+div .alignright {
+	float:right;
+	margin: 5px 0 20px 20px;
+}
+
+a img.alignleft {
+	float:left;
+	margin: 5px 20px 20px 0;
+}
+
+a img.alignnone {
+	margin: 5px 0 20px 20px;
+}
+
+a img.alignright {
+	float:right;
+	margin: 5px 0 20px 20px;
+}
+
+a img.aligncenter {
+	margin-right: auto;
+	margin-left: auto;
+}
+
+.wp-caption.alignnone {
+	margin: 5px 0 20px 20px;
+}
+
+.wp-caption.alignright {
+	margin: 5px 0 20px 20px;
+}
+
+.wp-caption.alignleft {
+	margin: 5px 20px 20px 0;
+}
+
+/* Text meant only for screen readers. */
+
+.screen-reader-text:focus {
+	right: 5px;
+	left: auto;
+}
+
+/* =Structure
+----------------------------------------------- */
+
+#top-menu-container #s {
+	float: left;
+	padding-right: 30px;
+	padding-left: 0;
+}
+
+img.site-logo, h1.site-title {
+	float: right;
+}
+
+.site-title-des {
+	float: left;
+	margin: 30px 0 0 20px;
+	text-align: left;
+}
+
+#content {
+	float:right;
+}
+
+#left-sidebar {
+	float: left;
+}
+
+#social {
+	float: left;
+	margin-left: 20px;
+	margin-right: auto;
+}
+
+.facebook-link, 
+.twitter-link, 
+.gplus-link, 
+.blog-link,
+.ytube-link,
+.lin-link {
+	float: right;
+}
+
+/* Common Elements 
+------------------------------------------------------------- */
+ol, 
+ul {
+	padding: 0 10px 10px 0;
+}
+
+address {
+	text-align: left;
+}
+
+/* Menu Elements 
+------------------------------------------------------------- */
+
+#main-menu-con {
+	float: right;
+}
+
+#main-menu-con li {
+	float: right;
+	background: url("images/nav_border.png") no-repeat scroll left center transparent;
+}
+
+#main-menu-con li ul {
+	float: right;
+}
+
+#main-menu-con ul ul, 
+.sub-menu, .sub-menu ul ul {
+	float: right;
+	right: 0;
+	left: auto;
+}
+
+#main-menu-con ul ul ul {
+	right: 100%;
+	left: auto;
+}
+
+#main-menu-con ul ul a {
+	text-align: right;
+}
+
+#main-menu-con ul ul a:hover {
+	padding-right: 20px;
+	padding-left: 0;
+}
+
+/* Wedget Elements 
+------------------------------------------------------------- */
+
+#left-sidebar .widget ul,
+#left-sidebar .widget ol {
+	margin-right: 15px;
+	margin-left: auto;
+}
+
+#footer-sidebar .first-footer-widget {
+	float:right;
+}
+
+#footer-sidebar .footer-widgets {
+	margin-right: 15px;
+	float:right;
+	margin-left: auto;
+}
+
+#footer-sidebar .widget ul,
+ #footer-sidebar .widget ol {
+	margin-right: 10px;
+	margin-left: auto;
+}
+
+/* Design Elements 
+------------------------------------------------------------- */
+
+blockquote {
+	border-right: 10px solid #158E09;
+	border-left: 10px solid #158E09;
+}
+
+blockquote:before {
+	margin-left:.20em;
+	margin-right: auto;
+}
+
+blockquote:after {
+	margin-right:.20em;
+	margin-left: auto;
+}
+
+#container .attachment-post-thumbnail {
+	float: right;
+	margin: 5px 0 10px 10px;
+}
+
+h1.page-title, 
+h1.arc-post-title {
+	text-align: right;
+}
+
+h2.post-title, 
+h2.comments, 
+h3#reply-title, 
+h2.post-title-color,
+h2.post-title a {
+	text-align: right;
+}
+
+.floatright {
+	float: right;
+	text-align:right;
+}
+
+.floatleft {
+	float: left;
+	text-align:left;
+}
+
+#page-nav .alignleft {
+	text-align:left;
+}
+
+#page-nav .alignright {
+	text-align:right;
+}
+
+/*.... Comments ......
+-------------------------------------------------- */
+
+#commentsbox .avatar {
+	float: right;
+	right: -100px;
+	left: auto;
+}
+
+.comment-body:before {
+	right: -21px;
+	left: auto;
+}
+
+#commentsbox .comment-body ol li {
+	padding: 5px 20px 5px 0;
+}
+
+#commentsbox .comment-body ul  li {
+	padding: 5px 20px 5px 0;
+}
+
+#commentsbox .commentlist li.comment {
+	padding: 5px 50px 0 0;
+	padding:5px 100px 0 0;
+}
+
+/* =Media Print
+-------------------------------------------------------------- */
+@media print {
+
+}
+
+
