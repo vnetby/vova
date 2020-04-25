@@ -12,27 +12,26 @@ get_header(); ?>
 
 		<?php while (have_posts()) : the_post(); ?>
 
-			<div <?php post_class(); ?>>
+			<div class="post-loop-card">
 				<h2 class="post-title">
 					<a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
 				</h2>
 				<div class="entrytext"><?php the_post_thumbnail('thumbnail'); ?>
 					<div class="shirt-desc">
 						<?php
-								$desc = get_field('news_shirt_desc', $post->ID);
-								$desc = $desc ? $desc : strip_text($post->post_content, 50);
-								echo $desc;
-								?>
+						$desc = get_field('news_shirt_desc', $post->ID);
+						$desc = $desc ? $desc : strip_text($post->post_content, 50);
+						echo $desc;
+						?>
 					</div>
+					<div class="clear"> </div>
 				</div>
-				<div class="clear"> </div>
-
 			</div>
 
 		<?php endwhile; ?>
 		<?php
-			the_posts_pagination();
-			?>
+		the_posts_pagination();
+		?>
 
 	<?php else : ?>
 

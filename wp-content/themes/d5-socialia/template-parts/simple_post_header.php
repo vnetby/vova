@@ -3,31 +3,31 @@
 
 $has_header = false;
 
-if ( is_search() && !$has_header ) {
+if (is_search() && !$has_header) {
   $has_header = true;
   $title = 'Поиск';
   $img = SRC . "img/def_header.jpg";
 }
 
 
-if ( is_archive() && !$has_header ) {
-    $object = get_queried_object();
-    if ($object) {
-      $title = $object->label;
-      $img = SRC . "img/def_header.jpg";
-    }
+if (is_archive() && !$has_header) {
+  $object = get_queried_object();
+  if ($object) {
+    $title = $object->label;
+    $img = SRC . "img/def_header.jpg";
+  }
 }
 
-if ( is_404() && !$has_header ) {
+if (is_404() && !$has_header) {
   $has_header = true;
   $title = "Страница не найдена";
   $img =  SRC . "img/404.jpg";
 }
 
-if ( !$has_header ) {
+if (!$has_header) {
   $img = get_the_post_thumbnail_url($post->ID, 'large');
   $img = $img ? $img : SRC . "img/def_header.jpg";
-  
+
   $title = $post->post_title;
 }
 
@@ -43,5 +43,3 @@ if ( !$has_header ) {
     </h1>
   </div>
 </div>
-
-<?php

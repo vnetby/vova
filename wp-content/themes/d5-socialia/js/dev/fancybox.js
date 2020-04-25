@@ -1,3 +1,5 @@
+import { dom } from "vnet-dom";
+
 export const contentFancybox = () => {
   let items = dom.findAll('.art-content img');
   if (!items || !items.length) return;
@@ -8,6 +10,6 @@ export const contentFancybox = () => {
       jQuery.fancybox.open({
         src: item.getAttribute('src')
       })
-    })    
+    })
   })
 }

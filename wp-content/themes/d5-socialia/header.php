@@ -15,6 +15,7 @@
 </head>
 
 <body <?php body_class(); ?>>
+  <script src="<?= SRC; ?>js/head.min.js"></script>
   <?php
   the_block('header');
   ?>
@@ -28,7 +29,6 @@
         require(THEME_PATH . "template-parts/simple_post_header.php");
       }
       ?>
-
     </div>
   </div>
   <div id="container">

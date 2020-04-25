@@ -5,21 +5,37 @@
 button:hover {
   box-shadow: none !important;
 }
-
-
-.page-title {
-  font-size: 32px!important;
-  color: #fff!important;
-  text-shadow: 0 3px 3px rgba(0, 0, 0, 0.4);
-  margin: 0!important;
-  font-weight: 900!important;
+a {
+  transition: 0.15s;
 }
 
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+#footer {
+  margin-top: auto;
+}
+.page-title {
+  font-size: 32px !important;
+  color: #fff !important;
+  text-shadow: 0 3px 3px rgba(0, 0, 0, 0.4);
+  margin: 0 !important;
+  font-weight: 900 !important;
+}
 
 .left-border {
   display: inline-block;
   padding-left: 15px;
   border-left: 5px solid #ff6600;
+}
+
+#content,
+#content-full {
+  padding: 10px 15px;
+  border-radius: 10px;
+  background-color: rgba(0, 0, 0, 0.15);
 }
 
 #main-menu-con {
@@ -28,23 +44,22 @@ button:hover {
 
 #wp-admin-bar-my-account {
   img {
-    display: none!important;
+    display: none !important;
   }
 }
-
 
 #main-menu-con {
   margin-top: 24px;
 }
 
 #container {
-  overflow: visible!important;
+  overflow: visible !important;
 }
 /*==============================================================
 *												front header slider
 =============================================================== */
 .front-header-slider {
- .slick-list img {
+  .slick-list img {
     width: 100% !important;
     height: 100% !important;
     object-fit: cover !important;
@@ -99,7 +114,6 @@ button:hover {
     }
   }
 
-
   .slick-dots {
     position: absolute;
     z-index: 20;
@@ -116,7 +130,7 @@ button:hover {
       height: 8px;
       border-radius: 50%;
       box-shadow: none;
-      transition: .3s;
+      transition: 0.3s;
     }
 
     .slick-active button {
@@ -125,21 +139,13 @@ button:hover {
   }
 }
 
-
-
-
-
-
 /*==============================================================
 *												menu
-=============================================================== */  
+=============================================================== */
 .current-menu-item a {
-  background: url("../images/nav-hover.png") no-repeat scroll center top transparent!important;
+  background: url("../images/nav-hover.png") no-repeat scroll center top
+    transparent !important;
 }
-
-
-
-
 
 /*==============================================================
 *												SIMPLE HEADER
@@ -160,7 +166,7 @@ button:hover {
       object-fit: cover;
     }
     &:before {
-      content: '';
+      content: "";
       position: absolute;
       left: 0;
       width: 100%;
@@ -183,8 +189,6 @@ button:hover {
   }
 }
 
-
-
 /*==============================================================
 *												HEADER
 =============================================================== */
@@ -198,22 +202,21 @@ button:hover {
   background-repeat: no-repeat;
 
   &.vk {
-    background-image: url('../img/socials/vk.png');
+    background-image: url("../img/socials/vk.png");
   }
   &.ok {
-    background-image: url('../img/socials/ok.png');
+    background-image: url("../img/socials/ok.png");
   }
   &.you {
-    background-image: url('../img/socials/you.png');
+    background-image: url("../img/socials/you.png");
   }
   &.in {
-    background-image: url('../img/socials/in.png');
+    background-image: url("../img/socials/in.png");
   }
   &.fb {
-    background-image: url('../img/socials/fb.png');
+    background-image: url("../img/socials/fb.png");
   }
 }
-
 
 #top-menu-container {
   display: flex;
@@ -228,8 +231,8 @@ button:hover {
   padding-left: 10px;
   display: block;
   input {
-    width: 100%!important;
-    margin: 0!important;
+    width: 100% !important;
+    margin: 0 !important;
   }
 }
 
@@ -239,8 +242,8 @@ button:hover {
   .social-link {
     display: block;
     margin-right: 15px;
-    opacity: .6;
-    transition: .3s;
+    opacity: 0.6;
+    transition: 0.3s;
     &:hover {
       opacity: 1;
     }
@@ -250,9 +253,6 @@ button:hover {
   }
 }
 
-
-
-
 /*==============================================================
 *												PAGINATION
 =============================================================== */
@@ -261,7 +261,7 @@ button:hover {
   align-items: center;
   justify-content: center;
   .screen-reader-text {
-    display: none!important;
+    display: none !important;
   }
   .nav-links {
     display: flex;
@@ -277,26 +277,10 @@ button:hover {
   }
 }
 
-
-
-
-
 /*==============================================================
 *												ARCHIVE LOOP
 =============================================================== */
 .archive-loop {
-  & > * {
-    margin-bottom: 35px;
-    padding: 10px;
-    transition: .3s;
-    border-radius: 5px;
-    &:hover {
-      box-shadow: 0 0 10px rgba(84, 84, 84, 0.3);
-    }
-    &:last-child {
-      margin-bottom: 0;
-    }
-  }
   .entrytext {
     display: flex;
     .shirt-desc {
@@ -305,9 +289,33 @@ button:hover {
   }
 }
 
+.post-loop-card {
+  margin-bottom: 35px;
+  transition: 0.3s;
+  border-radius: 5px;
+  &:last-child {
+    margin-bottom: 0;
+  }
 
+  background-color: #fff;
 
+  .post-title {
+    padding: 15px 10px;
+    border-radius: 5px 5px 0 0;
+    a {
+      color: #fff;
+      &:hover {
+        opacity: 0.6;
+      }
+    }
+    background-color: #f60;
+  }
 
+  .entrytext {
+    margin: 0;
+    padding: 15px 10px;
+  }
+}
 
 /*==============================================================
 *												SEARCH CONTENT
@@ -317,29 +325,27 @@ button:hover {
     margin-bottom: 20px;
   }
 
-
   form {
-    #searchsubmit[type=submit] {
-      width: 120px!important;
-      display: block!important;
-      margin-left: auto!important;
-      margin-top: 20px!important;
+    #searchsubmit[type="submit"] {
+      width: 120px !important;
+      display: block !important;
+      margin-left: auto !important;
+      margin-top: 20px !important;
     }
   }
 
   .search-res-title {
     font-size: 24px;
     font-weight: bold;
-    color:#158E09;
+    // color: #158e09;
+    // color: #858f83;
+    color: #414141;
     margin-bottom: 20px;
     &:hover {
-      box-shadow: none!important;
+      box-shadow: none !important;
     }
   }
 }
-
-
-
 
 /*==============================================================
 *												NOT FOUND
@@ -350,14 +356,11 @@ button:hover {
   h2 {
     text-align: center;
     font-weight: bold;
-    color: #158E09;
+    color: #158e09;
     text-shadow: 0 3px 3px #fff;
     font-size: 28px;
   }
 }
-
-
-
 
 /*==============================================================
 *												GALLERY
@@ -383,12 +386,11 @@ button:hover {
       width: 100%;
       height: 100%;
 
-
       img {
-        width: 100%!important;
-        height: 100%!important;
-        object-fit: cover!important;
-        max-width: none!important;
+        width: 100% !important;
+        height: 100% !important;
+        object-fit: cover !important;
+        max-width: none !important;
       }
     }
     &:hover {
@@ -398,7 +400,6 @@ button:hover {
       }
     }
   }
-
 
   .gal-title {
     position: absolute;
@@ -413,7 +414,7 @@ button:hover {
     color: #fff;
     background-color: rgba(255, 102, 0, 0.7);
     opacity: 0;
-    transition-duration: .3s;
+    transition-duration: 0.3s;
     transform: translateY(15px);
   }
 }

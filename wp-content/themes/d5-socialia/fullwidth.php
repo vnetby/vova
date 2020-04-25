@@ -10,18 +10,11 @@ get_header(); ?>
 
 
 <div id="content-full">
- <?php if (have_posts()) : while (have_posts()) : the_post();?>
- <?php if (!is_front_page()): ?><h1 class="page-title"><?php the_title(); ?></h1><?php endif; ?>
- <div class="entrytext">
- <?php the_content(); ?>
- <?php wp_link_pages(array('before' => '<p><strong>' . __('Pages','d5-socialia'). ': </strong> ', 'after' => '</p>', 'next_or_number' => 'number')); ?>
- </div><div class="clear"> </div>
- <?php edit_post_link('Edit', '<p>', '</p>'); ?>
-<?php if (d5socialia_get_option ('cpage', '' ) != '1' ): comments_template('', true); endif;?>
- <?php endwhile; endif; ?>
- 
-
-
-
+	<?php
+	$content = apply_filters('the_content', $post->post_content);
+	if ($content) {
+		echo $content;
+	}
+	?>
 </div>
 <?php get_footer(); ?>
